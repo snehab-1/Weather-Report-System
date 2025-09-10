@@ -30,7 +30,9 @@ git clone https://github.com/snehab-1/weather-report-system.git
 cd weather-report-system
 or download the zip file to your local
 pip install -r requirements.txt
+```
 
-- run below command in command prompt or terminal
+Run below command in command prompt or terminal
+```
 python app.py
-click on url (http://127.0.0.1:5000/)
+```

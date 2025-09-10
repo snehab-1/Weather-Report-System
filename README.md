@@ -1,4 +1,4 @@
-# 🌦 Weather Report App
+# 🌦 Weather Report System
 
 A small Flask backend service that fetches **time-series weather data** from the [Open-Meteo API](https://open-meteo.com/) and generates:
 
@@ -26,6 +26,6 @@ A small Flask backend service that fetches **time-series weather data** from the
 ## 🛠 Installation
 
 ```bash
-git clone https://github.com/your-username/weather-report-app.git
-cd weather-report-app
+git clone https://github.com/snehab-1/weather-report-system.git
+cd weather-report-system
 pip install -r requirements.txt

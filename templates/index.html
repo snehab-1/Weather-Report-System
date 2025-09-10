@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}Weather Report System{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <h1>🌦 Weather Dashboard</h1>
+    <div id="message"></div>
+    <div >
+        <a class="btn" href="#" id="fetchBtn">Fetch Weather Data</a>
+        <a class="btn" href="/export/excel">Download Excel</a>
+        <a class="btn" href="/export/pdf">Download PDF</a>
+    </div>
+    <div class="note">
+        <p>⚠️ First, click <b>Fetch Weather Data</b> to update the database.<br>
+        Then the chart will appear below.</p>
+    </div>
+    <div class="chart">
+        {% if chart_b64 %}
+            <img src="data:image/png;base64,{{ chart_b64 }}" alt="Weather Chart">
+        {% else %}
+            <p style="color:#666;">No chart available yet. Please fetch weather data first.</p>
+        {% endif %}
+    </div>
+</div>
+
+{% block script1 %}
+<script>
+    document.getElementById("fetchBtn").addEventListener("click", function(e) {
+        e.preventDefault(); // prevent normal navigation
+    
+        // Show "loading..."
+        document.getElementById("message").innerHTML =
+            "<p style='color:blue;'>⏳ Fetching data...</p>";
+    
+        fetch("/weather-report?lat=47.37&lon=8.55")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("message").innerHTML =
+                    "<p style='color:green;'>✅ " + data.message + "</p>";
+                
+                // Optionally reload chart image dynamically
+                setTimeout(() => location.reload(), 1500);
+            })
+            .catch(err => {
+                console.error(err);
+                document.getElementById("message").innerHTML =
+                    "<p style='color:red;'>❌ Failed to fetch weather data.</p>";
+            });
+    });
+    </script>
+
+{% endblock script1 %}
+
+
+{% endblock content %}

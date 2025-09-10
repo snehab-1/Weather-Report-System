@@ -1,0 +1,26 @@
+Collecting weasyprint
+  Downloading weasyprint-66.0-py3-none-any.whl (301 kB)
+Collecting cffi>=0.6
+  Downloading cffi-2.0.0-cp310-cp310-win_amd64.whl (182 kB)
+Collecting cssselect2>=0.8.0
+  Downloading cssselect2-0.8.0-py3-none-any.whl (15 kB)
+Requirement already satisfied: Pillow>=9.1.0 in d:\weather report system\venv\lib\site-packages (from weasyprint) (11.3.0)
+Collecting tinycss2>=1.4.0
+  Downloading tinycss2-1.4.0-py3-none-any.whl (26 kB)
+Collecting tinyhtml5>=2.0.0b1
+  Downloading tinyhtml5-2.0.0-py3-none-any.whl (39 kB)
+Collecting Pyphen>=0.9.1
+  Downloading pyphen-0.17.2-py3-none-any.whl (2.1 MB)
+Requirement already satisfied: fonttools[woff]>=4.0.0 in d:\weather report system\venv\lib\site-packages (from weasyprint) (4.59.2)
+Collecting pydyf>=0.11.0
+  Downloading pydyf-0.11.0-py3-none-any.whl (8.1 kB)
+Collecting pycparser
+  Downloading pycparser-2.23-py3-none-any.whl (118 kB)
+Collecting webencodings
+  Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Collecting brotli>=1.0.1
+  Downloading Brotli-1.1.0-cp310-cp310-win_amd64.whl (357 kB)
+Collecting zopfli>=0.1.4
+  Downloading zopfli-0.2.3.post1-cp310-cp310-win_amd64.whl (99 kB)
+Installing collected packages: webencodings, zopfli, tinycss2, pycparser, brotli, tinyhtml5, Pyphen, pydyf, cssselect2, cffi, weasyprint
+Successfully installed Pyphen-0.17.2 brotli-1.1.0 cffi-2.0.0 cssselect2-0.8.0 pycparser-2.23 pydyf-0.11.0 tinycss2-1.4.0 tinyhtml5-2.0.0 weasyprint-66.0 webencodings-0.5.1 zopfli-0.2.3.post1

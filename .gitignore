@@ -1,0 +1,33 @@
+cat > .gitignore << 'EOF'
+# Byte-compiled / cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+env/
+venv/
+.venv/
+
+# SQLite database
+*.db
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Exported files (generated dynamically)
+*.xlsx
+*.pdf
+
+# VSCode / PyCharm configs
+.vscode/
+.idea/
+EOF

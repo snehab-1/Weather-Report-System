@@ -31,9 +31,6 @@ cd weather-report-system
 or download the zip file to your local
 pip install -r requirements.txt
 
----
-
-## Run Locally
 - run below command in command prompt or terminal
 python app.py
 click on url (http://127.0.0.1:5000/)
